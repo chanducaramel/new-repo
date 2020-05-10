@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>partners</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no , shrink-to-fit=no" />
+    <meta property="og:image" content="images/Final-03.png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="icon" type="image/x-icon" href="../images/logos/text.jpg">
+	<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+</head>
+<body>
+
+<!-- side nav -->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &lsaquo; </a>
+    <div class="row text-left">
+        <div class="col-md-3"></div>
+        <div class="col-md-8">
+            <div class="">
+                <a href="../index.html">HOME</a>
+            </div>
+            <div class="">
+                <a href="html/aboutus.html">TRAILS</a>
+            </div>
+            <div class="">
+                <a href="html/team.html">PRODUCTS </a>
+            </div>
+            <div class="">
+                <a href="html/ourservices.html">PLANS</a>
+            </div>
+            <div class="">
+                <a href="partners.html">PARTNERS</a>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+        </div>
+    <div class="col-md-3"></div>
+    </div>
+
+	<!-- End of Side Nav -->
+
+	<!-- Navbar -->
+	<nav id="navbar" class="navbar fixed-top bg-transparent">
+		<button class="btn" type="button" onclick="openNav()">
+			<i class="fa fa-align-left" style="font-size:30px;color:#e3484c;"></i>
+		</button>
+		<a class="navbar-brand hidden" id="brand-image" href="index.html">
+			<img src="../images/logos/logo.png" alt="logo" srcset="" height="70px" class="float-right">
+		</a>
+	</nav>
+
+	<!-- Navbar Ended -->
+	<section class="trails-section-1">
+		<div class="trail-pos-absolute">
+			<div class="row text-center row-margin">
+				<div class="col-12 mx-auto mr-auto mt-lg-5">
+					<img class=" hexagone" src="../images/eveego-head3.jpeg" alt="" srcset="" style="width: 100%;height: 100vh">
+				</div>
+			</div>
+		</div>
+	</section>
+<section class=" heightsec trails-running" id="sticky-1">
+<div class="container text-center">
+	<div class="running-text-position-1" id="p1">
+	<h1 class="pt-5 text-resp" style="">
+							Our Running Trails
+						</h1>
+						<hr class="hr-eco">
+	<!-- <div class="row pt-5 pb-3">
+		<div class="col-lg-3 col-md-3 col-6">
+			<img src="images/trails/trails1.png" class="img-deco">
+		</div>
+		<div class="col-lg-3 col-md-3 col-6">
+			<img src="images/trails/trails2.png" class="img-deco">
+		</div>
+		<div class="col-lg-3 col-md-3 col-6 margin-respons">
+			<img src="images/trails/trails3.png" class="img-deco">
+		</div>
+		<div class="col-lg-3 col-md-3 col-6 margin-respons">
+			<img src="images/trails/trails4.png" class="img-deco">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-12">
+			<img src="images/trails/trails5.png" class="img-fluid img-deco">
+		</div>
+		<div class="col-lg-8 col-md-8 col-12 margin-respons">
+			<img src="images/trails/trails6.png" class="img-fluid img-deco">
+		</div>
+	</div> -->
+</div>
+</div>
+</section>
+<section>
+	<div class="container text-center">
+		<div class="row ">
+			<h1 class="pt-5" style="font-size: 80px!important;text-align: center;">
+							Our current Operations
+						</h1>
+		</div>
+	</div>
+</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "50%";
+		}
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	<script type="text/javascript">
+		function sticky_relocate() {
+			var window_top = $(window).scrollTop();
+			var div_top = $('#sticky-1').offset().top;
+			if (window_top > div_top) {
+				$('#p1').addClass('stick');
+			} else {
+				$('#p1').removeClass('stick');
+			}
+		}
+		$(function () {
+			$(window).scroll(sticky_relocate);
+			sticky_relocate();
+		});
+	</script>
+	<script>
+		window.onscroll = () => {
+			const nav = document.querySelector('#navbar');
+			const brandImage = document.querySelector('#brand-image');
+			if (this.scrollY <= 400) {
+				nav.className = 'navbar fixed-top';
+				brandImage.className = 'navbar-brand hidden';
+			} else {
+				nav.className = 'white navbar fixed-top bg-white';
+				brandImage.className = 'navbar-brand animation';
+			}
+		};
+	</script>
+	</body>
+</html>
